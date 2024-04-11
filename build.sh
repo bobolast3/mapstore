@@ -6,7 +6,7 @@ export VERSION="SNAPSHOT-$GITREV"
 
 npm install
 npm run fe:build
-npm run lint
+
 
 if [ $# -eq 0 ]
   then

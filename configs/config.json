@@ -1,0 +1,228 @@
+{
+  "header": {
+    "isVisible": true,
+    "logo": {
+      "link": "https://www.ocims.gov.za/"
+    },
+    "title": "coastal flood hazard",
+    "search": {
+      "title": "Search By Location",
+      "tooltipTitle": "search",
+      "iconName": "search"
+    },
+    "menu": {
+      "isOpen": false,
+      "isOverlayOpen": false,
+      "isDraggable": false,
+      "options": [
+        {
+          "title": "Disclaimer",
+          "iconName": "exclamation-sign",
+          "componentName": "Disclaimer"
+        },
+        {
+          "title": "Help",
+          "iconName": "question-sign",
+          "componentName": "Help"
+        },
+        {
+          "title": "About",
+          "iconName": "info-sign",
+          "componentName": "About"
+        }
+      ]
+    }
+  },
+  "searchAndRunForm": {
+    "isOpen": true,
+    "isCollapsed": true,
+    "allowClose": false,
+    "isDraggable": true,
+    "title": "search and rescue",
+    "subtitle": "Please input georgraphical coordintates for a location above or drop a pin on the map and select a date and time to run the search algorithm for the location",
+    "form": [
+      {
+        "title": "step 1: select location",
+        "inputs": [
+          {
+            "label": "Coordinate Format",
+            "name": "coordinate",
+            "select": true,
+            "options": [
+              { "label": "DMS", "value": "dms" },
+              { "label": "Decimal Minutes", "value": "decimal" }
+            ],
+            "defaultValue": "one two",
+            "length": 12
+          },
+          {
+            "label": "Latitude",
+            "name": "lat",
+            "defaultValue": "one two",
+            "length": 6
+          },
+          {
+            "label": "Longitude",
+            "name": "lng",
+            "defaultValue": "ne twoo",
+            "length": 6
+          }
+        ]
+      },
+      {
+        "title": "step 2: select weather source",
+        "inputs": [
+          {
+            "label": "Weather Source",
+            "name": "weatherSource",
+            "select": true,
+            "options": [
+              { "label": "GFS", "value": "gfs" },
+              { "label": "TFS", "value": "tfs" }
+            ],
+            "defaultValue": "one two",
+            "length": 6
+          }
+        ]
+      },
+      {
+        "title": "step 3: select date and time",
+        "inputs": [
+          {
+            "label": "Last Known Date",
+            "name": "lastDate",
+            "type": "date",
+            "InputLabelProps": { "shrink": true },
+            "length": 6
+          },
+          {
+            "label": "Recuse Unit: ETA",
+            "name": "eta",
+            "type": "date",
+            "InputLabelProps": { "shrink": true },
+            "length": 6
+          }
+        ]
+      },
+      {
+        "title": "step 4: select target type",
+        "inputs": [
+          {
+            "label": "target type",
+            "name": "targetType",
+            "select": true,
+            "options": [
+              {
+                "label": "Person in water: state unknown",
+                "value": "unknownState"
+              },
+              { "label": "Person found", "value": "found" }
+            ],
+            "defaultValue": "one two",
+            "length": 12
+          }
+        ]
+      }
+    ]
+  },
+  "searchAndRunFormResult": {
+    "isOpen": true,
+    "isCollapsed": true,
+    "allowClose": false,
+    "isDraggable": false,
+    "title": "search and rescue result",
+    "subtitle": null,
+    "data": [
+      {
+        "title": "Event",
+        "results": [
+          {
+            "label": "Tag",
+            "value": "0",
+            "length": 6
+          },
+          {
+            "label": "Event Data",
+            "value": "2024-03-13 T10:27:51 SAST",
+            "length": 6
+          },
+          {
+            "label": "Target Type",
+            "value": "Person in water",
+            "length": 6
+          }
+        ]
+      },
+      {
+        "title": "Location",
+        "results": [
+          {
+            "label": "Last Location",
+            "value": "32.28.18 S 29.55.54 E",
+            "length": 6
+          },
+          {
+            "label": "Datum",
+            "value": "32.28.18 S 29.55.54 E",
+            "length": 6
+          }
+        ]
+      },
+      {
+        "title": "Search",
+        "results": [
+          {
+            "label": "Search A",
+            "value": "32.28.18 S 29.55.54 E",
+            "length": 6
+          },
+          {
+            "label": "Search B",
+            "value": "32.28.18 S 29.55.54 E",
+            "length": 6
+          },
+          {
+            "label": "Search C",
+            "value": "32.28.18 S 29.55.54 E",
+            "length": 6
+          },
+          {
+            "label": "Search D",
+            "value": "32.28.18 S 29.55.54 E",
+            "length": 6
+          }
+        ]
+      },
+      {
+        "title": "Time",
+        "results": [
+          {
+            "label": "Last Known Time",
+            "value": "2024-03-13T 10:21:00 SAST",
+            "length": 6
+          },
+          {
+            "label": "Rescue ETA",
+            "value": "2024-03-13T 10:21:00 SAST",
+            "length": 6
+          }
+        ]
+      },
+      {
+        "title": "Weather",
+        "results": [
+          {
+            "label": "Weather Source",
+            "value": "GFS",
+            "length": 6
+          },
+          {
+            "label": "Weather Data",
+            "value": "8314 knots 131.376",
+            "length": 6
+          }
+        ]
+      }
+    ]
+  }
+}

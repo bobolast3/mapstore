@@ -16,7 +16,7 @@ import {
  * setConfigProp('translationsPath', ['./MapStore2/web/client/translations', './translations']);
  */
 setConfigProp('translationsPath', './MapStore2/web/client/translations');
-setConfigProp('themePrefix', 'mapstore');
+setConfigProp('themePrefix', 'my_project');
 
 /**
  * Use a custom plugins configuration file with:

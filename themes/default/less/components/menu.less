@@ -1,0 +1,27 @@
+.menu-overlay {
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+}
+
+.menu-options {
+  position: relative;
+  &__icon-container {
+    position: relative;
+
+    background: @primary-color-light;
+    color: #fff;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(0px);
+  }
+}
+
+.menu-options > * {
+  position: absolute;
+  height: auto;
+  left: 0;
+  top: 0;
+  display: block;
+  transform: translate(-50%, -50%);
+}
